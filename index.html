@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profit Translate</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+  <header>
+    <img src="logo.svg" alt="Logo" height="40" />
+    <nav>
+      <ul>
+        <li><a href="#hero">Главная</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#form">Заявка</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="cta">🌓</button>
+  </header>
+
+  <section id="hero" class="screen">
+    <h1>Профессиональные переводы</h1>
+    <p>Официальные переводы, апостиль, справки и больше — быстро и качественно</p>
+    <button class="cta">Оформить заявку</button>
+  </section>
+
+  <section id="services" class="screen">
+    <h2>Наши услуги</h2>
+    <div class="cards">
+      <div class="card">Перевод на языки мира</div>
+      <div class="card">Нострификация</div>
+      <div class="card">Апостиль</div>
+      <div class="card">Справки о несудимости</div>
+    </div>
+  </section>
+
+  <section id="form" class="screen">
+    <h2>Заявка</h2>
+    <form>
+      <select>
+        <option>Выберите услугу</option>
+        <option>Перевод</option>
+        <option>Нострификация</option>
+        <option>Апостиль</option>
+        <option>Справка о несудимости</option>
+      </select>
+      <input type="text" placeholder="Срок выполнения" />
+      <textarea placeholder="Комментарий"></textarea>
+      <div class="file-upload">
+        Перетащите файл или выберите
+        <input type="file" hidden />
+      </div>
+      <button type="submit" class="cta">Отправить</button>
+    </form>
+  </section>
+
+  <section id="contacts" class="screen">
+    <h2>Контакты</h2>
+    <p>Email: <a href="mailto:office2profit@yahoo.com">office2profit@yahoo.com</a></p>
+    <p>Телефон: <a href="tel:+380954194014">+380954194014</a></p>
+    <p><a class="cta" href="https://t.me/profit_translate_bot">Telegram</a></p>
+    <p><a class="cta" href="https://wa.me/380954194014">WhatsApp</a></p>
+    <div id="map"></div>
+  </section>
+
+  <a class="floating-whatsapp" href="https://wa.me/380954194014">💬</a>
+  <script src="main.js"></script>
+</body>
+</html>

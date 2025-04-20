@@ -1,0 +1,104 @@
+
+:root {
+  --bg-light: #ffffff;
+  --bg-dark: #002d26;
+  --green: #00c774;
+  --text-light: #ffffff;
+  --text-dark: #000000;
+}
+
+[data-theme="dark"] {
+  --bg: var(--bg-dark);
+  --text: var(--text-light);
+}
+[data-theme="light"] {
+  --bg: var(--bg-light);
+  --text: var(--text-dark);
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background: var(--green);
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.cta {
+  background: var(--green);
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  scroll-snap-align: start;
+  padding: 2em;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+.card {
+  background: var(--green);
+  color: white;
+  padding: 1.5em;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.file-upload {
+  border: 2px dashed var(--green);
+  padding: 2em;
+  margin: 1em 0;
+  cursor: pointer;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  margin-top: 1em;
+}
+
+.floating-whatsapp {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  background: #25d366;
+  color: white;
+  padding: 0.75em 1em;
+  border-radius: 50%;
+  font-size: 1.5em;
+  text-decoration: none;
+}
