@@ -1,0 +1,9 @@
+{
+  "name": "Profit Translate",
+  "short_name": "Translate",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0f2f24",
+  "theme_color": "#0f2f24",
+  "icons": []
+}
